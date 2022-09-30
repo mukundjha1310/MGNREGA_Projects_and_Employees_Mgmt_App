@@ -7,20 +7,18 @@ public class GPM {
 	private String Email;
 	private String Mobile;
 	private String Password;
-	private int BDO_Id;
 	
 	public GPM() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public GPM(int gPM_Id, String name, String email, String mobile, String password, int bDO_Id) {
+	public GPM(int gPM_Id, String name, String email, String mobile, String password) {
 		super();
 		GPM_Id = gPM_Id;
 		Name = name;
 		Email = email;
 		Mobile = mobile;
 		Password = password;
-		BDO_Id = bDO_Id;
 	}
 
 	public int getGPM_Id() {
@@ -63,18 +61,11 @@ public class GPM {
 		Password = password;
 	}
 
-	public int getBDO_Id() {
-		return BDO_Id;
-	}
-
-	public void setBDO_Id(int bDO_Id) {
-		BDO_Id = bDO_Id;
-	}
 
 	@Override
 	public String toString() {
 		return "GPM [GPM_Id=" + GPM_Id + ", Name=" + Name + ", Email=" + Email + ", Mobile=" + Mobile + ", Password="
-				+ Password + ", BDO_Id=" + BDO_Id + "]";
+				+ Password + "]";
 	}
 	
 	
