@@ -63,4 +63,54 @@ public class Project_DAOImpl implements Project_DAO {
 		return projectList;
 	}
 
+	@Override
+	public String allocateProjectToGPM(int projectId, int GPMId) throws UsersException {
+		
+		String message = "Not Allocated...!";
+		String proj_name = "";
+		String gpm_name = "";
+		
+		try (Connection conn = DBConnection.provideConnection()) {
+
+			PreparedStatement ps1 = conn.prepareStatement("select name from GPM where GPM_ID=?");
+			
+			ps1.setInt(1, GPMId);
+			
+			ResultSet rs1 = ps1.executeQuery();
+			
+			if(rs1.next()) 
+			{
+				gpm_name = rs1.getString("NAME");
+				
+				PreparedStatement ps2 = conn.prepareStatement("select name from projects where PROJECT_ID=?");
+				ps2.setInt(1, projectId);
+				
+				ResultSet rs2 = ps2.executeQuery();
+				
+				if(rs2.next()) 
+				{
+					proj_name = rs2.getString("NAME");
+					
+					PreparedStatement ps3 = conn.prepareStatement("insert into GPM_PROJECT values(?,?)");
+					ps3.setInt(1, GPMId);
+					ps3.setInt(2, projectId);
+					
+					int eu = ps3.executeUpdate();
+
+					if (eu > 0) message = proj_name+" Project allocated to "+gpm_name+" GPM Successfully...";
+					else throw new UsersException("Something went wrong...!");
+				}
+				else
+					throw new UsersException("Invalid Project Id...!");
+			}
+			else
+				throw new UsersException("Invalid GPM Id...!");
+			
+		} catch (SQLException e) {
+			message = e.getMessage();
+		}
+		
+		return message;
+	}
+
 }
