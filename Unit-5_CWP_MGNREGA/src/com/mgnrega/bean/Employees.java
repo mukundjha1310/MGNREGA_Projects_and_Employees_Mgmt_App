@@ -6,19 +6,17 @@ public class Employees {
 	private String Name;
 	private String Mobile;
 	private int Wages;
-	private int Project_Id;
 	
 	public Employees() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Employees(int employee_Id, String name, String mobile, int wages, int project_Id) {
+	public Employees(int employee_Id, String name, String mobile, int wages) {
 		super();
 		Employee_Id = employee_Id;
 		Name = name;
 		Mobile = mobile;
 		Wages = wages;
-		Project_Id = project_Id;
 	}
 
 	public int getEmployee_Id() {
@@ -53,18 +51,11 @@ public class Employees {
 		Wages = wages;
 	}
 
-	public int getProject_Id() {
-		return Project_Id;
-	}
-
-	public void setProject_Id(int project_Id) {
-		Project_Id = project_Id;
-	}
 
 	@Override
 	public String toString() {
 		return "Employees [Employee_Id=" + Employee_Id + ", Name=" + Name + ", Mobile=" + Mobile + ", Wages=" + Wages
-				+ ", Project_Id=" + Project_Id + "]";
+				+ "]";
 	}
 	
 	
