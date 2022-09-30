@@ -9,7 +9,7 @@ public interface Project_DAO {
 	
 	public String createProject(Projects project);
 	
-	public List<Projects> viewAllProjects()throws UsersException;
+	public List<Projects> viewAllProjects() throws UsersException;
 	
-	
+	public String allocateProjectToGPM(int projectId, int GPMId) throws UsersException;
 }
