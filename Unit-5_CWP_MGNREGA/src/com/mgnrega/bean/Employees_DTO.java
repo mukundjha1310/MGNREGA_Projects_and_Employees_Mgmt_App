@@ -2,6 +2,7 @@ package com.mgnrega.bean;
 
 public class Employees_DTO {
 	
+	private int Employee_Id;
 	private String Emp_Name;
 	private String Mobile;
 	private int Wages;
@@ -14,9 +15,10 @@ public class Employees_DTO {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Employees_DTO(String emp_Name, String mobile, int wages, String proj_Name, String start_Date, String end_Date,
-			String proj_Status) {
+	public Employees_DTO(int employee_Id, String emp_Name, String mobile, int wages, String proj_Name,
+			String start_Date, String end_Date, String proj_Status) {
 		super();
+		Employee_Id = employee_Id;
 		Emp_Name = emp_Name;
 		Mobile = mobile;
 		Wages = wages;
@@ -24,6 +26,14 @@ public class Employees_DTO {
 		Start_Date = start_Date;
 		End_Date = end_Date;
 		Proj_Status = proj_Status;
+	}
+
+	public int getEmployee_Id() {
+		return Employee_Id;
+	}
+
+	public void setEmployee_Id(int employee_Id) {
+		Employee_Id = employee_Id;
 	}
 
 	public String getEmp_Name() {
@@ -84,10 +94,9 @@ public class Employees_DTO {
 
 	@Override
 	public String toString() {
-		return "EmployeeDTO [Emp_Name=" + Emp_Name + ", Mobile=" + Mobile + ", Wages=" + Wages + ", Proj_Name="
-				+ Proj_Name + ", Start_Date=" + Start_Date + ", End_Date=" + End_Date + ", Proj_Status=" + Proj_Status
-				+ "]";
+		return "Employees_DTO [Employee_Id=" + Employee_Id + ", Emp_Name=" + Emp_Name + ", Mobile=" + Mobile
+				+ ", Wages=" + Wages + ", Proj_Name=" + Proj_Name + ", Start_Date=" + Start_Date + ", End_Date="
+				+ End_Date + ", Proj_Status=" + Proj_Status + "]";
 	}
-	
-	
+
 }
