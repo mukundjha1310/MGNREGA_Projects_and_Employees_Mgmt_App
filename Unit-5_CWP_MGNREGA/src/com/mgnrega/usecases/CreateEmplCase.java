@@ -13,6 +13,7 @@ public class CreateEmplCase {
 		Scanner sc = new Scanner(System.in);
 		System.out.println();
 		System.out.println("<=======  Create Employees...  ========>");
+		System.out.println();
 		
 		System.out.println("Enter Employee Name :");
 		String name = sc.next();

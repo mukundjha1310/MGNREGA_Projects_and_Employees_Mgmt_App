@@ -2,7 +2,9 @@ package com.mgnrega.main;
 
 import java.util.Scanner;
 import com.mgnrega.usecases.AssignEmployeesToProjectCase;
+import com.mgnrega.usecases.ChangeGPMPassCase;
 import com.mgnrega.usecases.CreateEmplCase;
+import com.mgnrega.usecases.UpdateProjectStatusCase;
 import com.mgnrega.usecases.ViewAllEmplCase;
 import com.mgnrega.usecases.ViewAllEmployeesWorkDetailsCase;
 
@@ -17,9 +19,11 @@ public class GPM_Main {
 		System.out.println("Enter 2 to View Details Of Employees...");
 		System.out.println("Enter 3 to Assign Employee to a Project....");
 		System.out.println("Enter 4 to View total number of days Employee worked in a project and also their wages...");
+		System.out.println("Enter 5 to Update Project Status...");
 		System.out.println();
-		System.out.println("Enter 5 to LogOut from Main page...");
-		System.out.println("Enter 6 to Exit from Application...");
+		System.out.println("Enter 6 to change Login Password...");
+		System.out.println("Enter 7 to LogOut from Main page...");
+		System.out.println("Enter 8 to Exit from Application...");
 		System.out.println();
 
 		System.out.println("Select an option to continue:");
@@ -40,9 +44,15 @@ public class GPM_Main {
 			ViewAllEmployeesWorkDetailsCase.main(args);
 			break;
 		case 5:
-			Welcome_Page.main(args);
+			UpdateProjectStatusCase.main(args);
 			break;
 		case 6:
+			ChangeGPMPassCase.main(args);
+			break;
+		case 7:
+			Welcome_Page.main(args);
+			break;
+		case 8:
 			System.out.println("Thank you for using MGNREGA management system...");
 			break;
 

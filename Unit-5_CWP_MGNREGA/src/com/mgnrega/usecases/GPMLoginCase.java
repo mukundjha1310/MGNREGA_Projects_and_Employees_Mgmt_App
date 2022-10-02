@@ -12,9 +12,10 @@ public class GPMLoginCase {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-
+		System.out.println();
 		System.out.println("<=== GPM Login Page===>");
-
+		System.out.println();
+		
 		System.out.println("Enter Email:");
 		String email = sc.next();
 

@@ -12,4 +12,8 @@ public interface Project_DAO {
 	public List<Projects> viewAllProjects() throws UsersException;
 	
 	public String allocateProjectToGPM(int projectId, int GPMId) throws UsersException;
+	
+	public String removeGPMfromProject(int projectId, int GPMId) throws UsersException;
+	
+	public String updateProjectStatus(int proj_id, String new_status)throws UsersException;
 }
