@@ -12,7 +12,8 @@ public class BDOLoginCase {
 	public static void main(String[] args) {
 		System.out.println();
 		System.out.println("<==== Welcome to BDO Login page ====>");
-
+		System.out.println();
+		
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter Email:");

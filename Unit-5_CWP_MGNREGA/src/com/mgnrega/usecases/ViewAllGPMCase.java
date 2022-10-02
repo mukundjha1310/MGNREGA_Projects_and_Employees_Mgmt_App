@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.mgnrega.bean.GPM;
-import com.mgnrega.dao.GPM_DAO;
-import com.mgnrega.dao.GPM_DAOImpl;
+import com.mgnrega.dao.BDO_DAO;
+import com.mgnrega.dao.BDO_DAOImpl;
 import com.mgnrega.exceptions.UsersException;
 import com.mgnrega.main.BDO_Main;
 
@@ -18,7 +18,7 @@ public class ViewAllGPMCase {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		GPM_DAO gpms = new GPM_DAOImpl();
+		BDO_DAO gpms = new BDO_DAOImpl();
 		
 		try {
 			

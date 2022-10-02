@@ -4,6 +4,7 @@ import java.util.Scanner;
 import com.mgnrega.usecases.AllocateProjectToGPMCase;
 import com.mgnrega.usecases.CreateGPMCase;
 import com.mgnrega.usecases.CreateProjectCase;
+import com.mgnrega.usecases.RemoveGPMfromProjectCase;
 import com.mgnrega.usecases.ViewAllEmplByProjectCase;
 import com.mgnrega.usecases.ViewAllGPMCase;
 import com.mgnrega.usecases.ViewAllProjectsCase;
@@ -20,10 +21,11 @@ public class BDO_Main {
 		System.out.println("Enter 3 to Create new Gram Panchayat Members(GPMs)...");
 		System.out.println("Enter 4 to View all the GPMs...");
 		System.out.println("Enter 5 to Allocate  Project to GPM...");
-		System.out.println("Enter 6 to See List of Employee working on that Project and their wages...");
+		System.out.println("Enter 6 to Remove GPM from Project...");
+		System.out.println("Enter 7 to See List of Employee working on that Project and their wages...");
 		System.out.println();
-		System.out.println("Enter 7 to LogOut from Main page...");
-		System.out.println("Enter 8 to Exit from Application...");
+		System.out.println("Enter 8 to LogOut from Main page...");
+		System.out.println("Enter 9 to Exit from Application...");
 		System.out.println();
 
 		System.out.println("Select an option to continue:");
@@ -46,12 +48,15 @@ public class BDO_Main {
 			AllocateProjectToGPMCase.main(args);
 			break;
 		case 6:
-			ViewAllEmplByProjectCase.main(args);
+			RemoveGPMfromProjectCase.main(args);
 			break;
 		case 7:
-			Welcome_Page.main(args);
+			ViewAllEmplByProjectCase.main(args);
 			break;
 		case 8:
+			Welcome_Page.main(args);
+			break;
+		case 9:
 			System.out.println("Thank you for using MGNREGA management system...");
 			break;
 		}

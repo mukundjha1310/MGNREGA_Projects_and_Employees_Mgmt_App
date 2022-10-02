@@ -13,7 +13,8 @@ public class CreateProjectCase {
 		Scanner sc = new Scanner(System.in);
 		System.out.println();
 		System.out.println("<=======  Create Projects...  ========>");
-
+		System.out.println();
+		
 		System.out.println("Enter Project Name :");
 		String name = sc.next();
 		System.out.println("Enter Project Start_Date (yyyy-mm--dd) :");

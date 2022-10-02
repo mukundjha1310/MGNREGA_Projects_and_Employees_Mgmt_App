@@ -11,6 +11,8 @@ public class CreateGPMCase {
 	public static void main(String[] args) {
 		System.out.println();
 		System.out.println("<======  Create Gram Panchayat Members(GPM)...  =======>");
+		System.out.println();
+		
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter GPM Name :");

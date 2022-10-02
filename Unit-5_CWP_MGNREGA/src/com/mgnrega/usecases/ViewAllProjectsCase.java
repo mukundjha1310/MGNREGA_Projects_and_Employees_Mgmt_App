@@ -13,6 +13,8 @@ public class ViewAllProjectsCase {
 	public static void main(String[] args) {
 		System.out.println();
 		System.out.println("<=======  List Of All Projects...  =======>");
+		System.out.println();
+		
 		Scanner sc = new Scanner(System.in);
 		
 		Project_DAO projects = new Project_DAOImpl();
@@ -20,7 +22,6 @@ public class ViewAllProjectsCase {
 		try {
 			List<Projects> projectList = projects.viewAllProjects();
 			
-			System.out.println();
 			if(projectList.isEmpty()) System.out.println("No Projects found...!");
 			else projectList.forEach(p -> {
 				System.out.println("Project_Id :   " + p.getProject_Id());

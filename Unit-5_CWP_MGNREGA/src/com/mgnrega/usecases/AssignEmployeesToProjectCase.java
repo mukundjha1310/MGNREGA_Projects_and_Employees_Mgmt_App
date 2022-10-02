@@ -14,6 +14,7 @@ public class AssignEmployeesToProjectCase {
 		
 		System.out.println();
 		System.out.println("<=====  Employees Allocation to Project...  =====>");
+		System.out.println();
 		
 		System.out.println("Enter Employee Id :");
 		int EmplId = sc.nextInt();
