@@ -1,4 +1,4 @@
-<h1 align="center" >MGNREGA_Projects_and_Employees_Mgnt_Application</h1>
+<h1 align="center" >MGNREGA_Projects_and_Employees_Management_Application</h1>
 
 
 <h3 align="left" >It is a console-based Java Application where you will be able to log in and log out as an Administrator Block Development Officer (BDO).</h3>
