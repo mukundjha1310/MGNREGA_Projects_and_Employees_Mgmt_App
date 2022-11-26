@@ -1,10 +1,33 @@
 <h1 align="center" >MGNREGA_Projects_and_Employees_Management_App</h1>
 
+![MGNREGA](https://user-images.githubusercontent.com/105915717/204104643-76691013-5123-4a10-95c1-920b0c415ccd.png)
+<br>
 
-<h3 align="left" >It is a console-based Java Application where you will be able to log in and log out as an Administrator Block Development Officer (BDO).</h3>
-<h3 align="left" >After logging in as BDO you can create new projects and Gram Panchayat Member (GPM) and also you will be able to delete projects and remove GPM from particular projects.</h3>
-<h3 align="left" >Once a GPM is created and assigned to a specific project, GPM can now log in and log out and he can change the password.</h3>
-<h3 align="left" >Now GPM can create employees, then assign those employees to different projects, and at the same time, he can remove employees from projects.</h3>
-<h3 align="left" >BDO can view the list of details of GPM.</h3>
-<h3 align="left" >Both BDO and GPM can view the list of details of employees and the list of details of projects.</h3>
-<h3 align="left" >GPM can check the total salary/wages of the employees and the number of days employee has worked on a specific project.</h3>
+It is a console-based Java Application where BDO and Gram Panchayat Members (GPM) can login and Logout into their respective pages. Here in this application BDO has access to all features of this application like adding GPMs, creating projects and assigning projects to GPM, seeing all the employees and the status of projects, and GPM have access to allocating employees to various projects, managing projects and employees and can check the status of projects and the salary or wages of employees.
+This entire project is developed by me during construct week at Masai School.
+
+# Tech Stacks
+- Java
+- JDBC
+- MySQL
+
+# Modules
+- BDO
+- GPM
+- Employee
+- Project
+
+# Features
+- BDO and Gram Panchayat Member (GPM) Login and Logout.
+- BDO can create project and can register GPMs.
+- BDO can assign projects to GPM.
+- BDO can see all the employees and the status of projects.
+- GPM can add employees to various project.
+- GPM can see status of projects.
+- GPM can calculate Salary/wages of Employees.
+- And Finally BDO and GPM both can update the details of various datas stored in the database according to their authority.
+
+# Contributor
+- https://github.com/mukundjha1310
+
+
